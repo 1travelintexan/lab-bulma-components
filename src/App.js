@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
 import FormField from "./formfield/FormField";
+import CoolButton from "./coolButton/CoolButton";
 
 const App = () => {
   return (
@@ -12,6 +13,12 @@ const App = () => {
         type="email"
         placeholder="e.g. alexsmith@gmail.com"
       />
+      <CoolButton isSmall isDanger className="is-rounded my-class">
+        Login
+      </CoolButton>
+      <CoolButton isSmall isSuccess>
+        Signup
+      </CoolButton>
     </div>
   );
 };
