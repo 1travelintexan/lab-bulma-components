@@ -47,7 +47,7 @@ $ npm install bulma
 You will have to import Bulma CSS in every component that will use it. You can do it with the following line:
 
 ```javascript
-import 'bulma/css/bulma.css';
+import "bulma/css/bulma.css";
 ```
 
 ## Instructions
@@ -105,10 +105,10 @@ What is visually rendered
 As we can see, there are similarities between each of the `FormFields` so it would be the best to pass props that will fill in different `label` tags, as well as `type` and `placeholder` attributes. To give you a hint, check the following code snippet:
 
 ```jsx
-const FormField = props => {
+const FormField = (props) => {
   return (
-    <div className='field'>
-      <label className='label'>{props.label}</label>
+    <div className="field">
+      <label className="label">{props.label}</label>
       // some other code goes here
     </div>
   );
@@ -207,8 +207,9 @@ Now, we are going to create `Message` component. You can find the documentation 
 
 ```jsx
 // JSX version
-<Message isInfo title='Hello World'>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>.
+<Message isInfo title="Hello World">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+  <strong>Pellentesque risus mi</strong>.
 </Message>
 ```
 
