@@ -4,6 +4,7 @@ import FormField from "./formfield/FormField";
 import CoolButton from "./coolButton/CoolButton";
 
 const App = () => {
+  let myClass = "is-rounded my-class";
   return (
     <div>
       <Navbar />
@@ -13,7 +14,7 @@ const App = () => {
         type="email"
         placeholder="e.g. alexsmith@gmail.com"
       />
-      <CoolButton isSmall isDanger className="is-rounded my-class">
+      <CoolButton isSmall isDanger className={myClass}>
         Login
       </CoolButton>
       <CoolButton isSmall isSuccess>
