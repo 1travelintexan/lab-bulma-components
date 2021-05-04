@@ -1,10 +1,8 @@
 import React from "react";
 
-const CoolButton = () => {
-  return (
-    <button className="button is-rounded my-class is-danger is-small">
-      Button 1
-    </button>
-  );
+const CoolButton = (props) => {
+  const { isSmall, isDanger, isSuccess, className } = props;
+
+  return <button className={myClass}>{props.children}</button>;
 };
 export default CoolButton;
